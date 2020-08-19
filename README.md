@@ -1,15 +1,11 @@
-# Continuous Print Queue Plugin
+# WhatsappAlerts Plugin
 
-Octoprint plugin that allows users to generate a print queue, specify a print bed clearning script and run the queue which will print-clear-print until the end of the queue.
+Octoprint plugin that allows users to get whatsapp messages using Twilio.
 
 ## Setup
 
+Configure __init__.py with your Twilio Account SID and your Twilio Auth Token.
+
 Install manually using this URL:
 
-    https://github.com/nukeem/continuousprint/archive/master.zip
-
-
-
-## Configuration
-
-Make sure you have a method of clearning the bed automatically and have set the print bed clearing script or you'll end up messing the first print.
+    https://github.com/spheppner/whatsappalerts/archive/master.zip
