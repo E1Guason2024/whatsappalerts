@@ -7,11 +7,12 @@ from twilio.rest import Client
 
 twilio_sid = "Your Twilio Account SID"
 twilio_auth = "Your Twilio Auth Token"
+tel_number = "whatsapp:YOURTELEPHONENUMBER"
 
 whatsapp_client = Client(twilio_sid, twilio_auth)
 
 def sendMessage(message):
-    msg = whatsapp_client.messages.create(body=message, from_="whatsapp:+14155238886", to="whatsapp:YourTelephoneNumber")
+    msg = whatsapp_client.messages.create(body=message, from_="whatsapp:+14155238886", to=tel_number)
 
 class WhatsappAlertsPlugin(octoprint.plugin.EventHandlerPlugin, octoprint.plugin.StartupPlugin):
     
