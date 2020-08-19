@@ -1,0 +1,3 @@
+include README.md
+recursive-include make3dautoprint/templates *
+recursive-include make3dautoprint/static *
