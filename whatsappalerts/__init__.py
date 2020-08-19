@@ -24,16 +24,16 @@ class WhatsappAlertsPlugin(octoprint.plugin.EventHandlerPlugin, octoprint.plugin
         if event == "EStop":
             message = "Emergency Stop has occured! Please check the state of the printer!"
         elif event == "PrintDone":
-            message = "%s finished printing successfully! Printing Time: %s Minutes" % (payload["name"], str(round(int(payload["time"]),2))//60)
+            message = "%s finished printing successfully! Printing Time: %s Minutes" % (payload["name"], str(round(int(payload["time"])//60,2)))
         elif event == "PrintFailed":
-            message = "%s failed to be printed! Printing Time: %s Minutes" % (payload["name"], str(round(int(payload["time"]),2))//60)
+            message = "%s failed to be printed! Printing Time: %s Minutes" % (payload["name"], str(round(int(payload["time"])//60,2)))
         elif event == "PrintStarted":
-            message = "%s started printing! File size: %s KB. Approximate Printing Time: %s Minutes" % (payload["name"], payload["size"]//1000, payload["size"]//1000//18.5)
+            message = "%s started printing! File size: %s KB." % (payload["name"], payload["size"]//1000)
         if message != "":
             sendMessage(message)
 
 __plugin_name__ = "Whatsapp Alerts"
-__plugin_version__ = "1.0.1"
+__plugin_version__ = "1.0.0"
 __plugin_description__ = "Plugin that sends Whatsapp Messages. By Simon Heppner"
 __plugin_pythoncompat__ = ">=2.7,<4"
 __plugin_implementation__ = WhatsappAlertsPlugin()
