@@ -14,11 +14,11 @@ plugin_package = "whatsappalerts"
 plugin_name = "whatsappalerts"
 
 # The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
-plugin_version = "1.0.0"
+plugin_version = "1.0.1"
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
-plugin_description = """AutoPrint UI System for Make3d. Automatically sorts the queue for priorities."""
+plugin_description = """Octoprint plugin thats sends Whatsapp Alerts to users."""
 
 # The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
 plugin_author = "Simon Heppner"
