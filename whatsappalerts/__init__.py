@@ -33,7 +33,7 @@ class WhatsappAlertsPlugin(octoprint.plugin.EventHandlerPlugin, octoprint.plugin
             sendMessage(message)
 
 __plugin_name__ = "Whatsapp Alerts"
-__plugin_version__ = "1.0.0"
+__plugin_version__ = "1.0.1"
 __plugin_description__ = "Plugin that sends Whatsapp Messages. By Simon Heppner"
 __plugin_pythoncompat__ = ">=2.7,<4"
 __plugin_implementation__ = WhatsappAlertsPlugin()
