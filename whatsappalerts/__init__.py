@@ -5,9 +5,9 @@ from octoprint.events import eventManager, Events
 
 from twilio.rest import Client
 
-twilio_sid = "Your Twilio Account SID"
-twilio_auth = "Your Twilio Auth Token"
-tel_number = "whatsapp:YOURTELEPHONENUMBER"
+twilio_sid = "USeb823922e6ae753efd679782a2e77c07"
+twilio_auth = "8a1a3257af40d5f1700a0280584458e1"
+tel_number = "whatsapp:+59899744452"
 
 whatsapp_client = Client(twilio_sid, twilio_auth)
 
